@@ -23,5 +23,5 @@ yarn start
 
 #### Response
 ```graphql
-Hello, World!
+"Hello, World!"
 ```
