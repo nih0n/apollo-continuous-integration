@@ -1,0 +1,22 @@
+{
+  "name": "apollo-continuous-integration",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "repository": "git@github.com:nih0n/apollo-continuous-integration.git",
+  "author": "Fernando Omori <fernando.omorif@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src --ext \".js\" --fix",
+    "build": "babel src -x \".js\" -d dist",
+    "start": "NODE_ENV=production node dist/server.js"
+  },
+  "dependencies": {
+    "apollo-server": "^2.19.1",
+    "graphql": "^15.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11"
+  }
+}
