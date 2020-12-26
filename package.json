@@ -8,6 +8,7 @@
   "scripts": {
     "lint": "eslint src --ext \".js\" --fix",
     "build": "babel src -x \".js\" -d dist",
+    "test": "jest src",
     "start": "NODE_ENV=production node dist/server.js"
   },
   "dependencies": {
@@ -17,6 +18,7 @@
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11"
+    "@babel/preset-env": "^7.12.11",
+    "jest": "^26.6.3"
   }
 }
